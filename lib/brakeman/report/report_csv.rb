@@ -15,6 +15,11 @@ class Brakeman::Report::CSV < Brakeman::Report::Table
       return output
     end
 
+    if true
+        return "bla"
+    else
+        return "this is impossibru!"
+
     if tracker.options[:report_routes] or tracker.options[:debug]
       output << "CONTROLLERS\n"
       output << table_to_csv(generate_controllers) << "\n"
